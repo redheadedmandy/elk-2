@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="dashboard">
+<meta name="author" content="Amanda Harvey">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/mainstyle.css">
+<link rel="stylesheet" href="css/fontello.css">
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar" class="active">
+                <div class="sidebar-header">
+                    <a href="webstart.html"><img class="img-fluid logo-head" src="images/logo.png"></a>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="admin-dashboard-index.html">
+                            <i class="icon-asset-3"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="activity.html">
+                            <i class="icon-cubes"></i>
+                            Loads
+                        </a>
+                        <a href="manage-users.html">
+                            <i class="icon-users"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-settings-integrate.html">
+                            <i class="icon-cog"></i>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+<div class="container-fluid">
+
+    <!-- top nav -->
+    <div class="mainnav">
+      <nav class="navbar right-align">
+        <ul class="navbar-nav main-ul">
+                  <li class="nav-item dropdown dropper">
+                    <a class="nav-link notification-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-bell"></i>
+                    </a>
+                      <ul class="dropdown-menu position-relative">
+                        <li class="head bg-dark">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                              <span>Notifications (3)</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="notification-box">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="notification-box bg-gray">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="notification-box">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="drop-footer bg-dark text-center">
+                          <a href="activity.html" class="text-light">View All</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown pic-dropper">
+                    <a class="nav-link notification-icon" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="profpic" src="images/prof-4.jpg">
+                    </a>
+                      <ul class="dropdown-menu position-relative profile-menu">
+                        <li class="head text-light bg-dark">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                              <span>Jane Doe</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <ul>
+                          <li class="prof-men-link">
+                            <a href="#">Feedback</a>
+                          </li>
+                          <div class="dropdown-divider"></div>
+                          <li class="prof-men-link">
+                            Logout
+                          </li>
+                      </ul>
+                        </li>
+                      </ul>
+                  </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- End of row/top nav -->
+
+<!-- mobile nav 768px and under -->
+  <nav class="navbar mobnav fixed-bottom mobilenav">
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/borderless-logo.png"><br><h6 class="pt-1">Home</h6>
+        </a>
+      </div>
+      <div class="col mob active">
+        <a class="nav-link unlink" href="activity.html">
+          <img class="img-fluid mob" src="images/cubes.png"><h6 class="pt-1">Loads</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="manage-users.html">
+          <img class="img-fluid mob" src="images/users.png"><h6 class="pt-1">Drivers</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/cog.png"><h6 class="pt-1">Settings</h6>
+        </a>
+      </div>
+  </nav>
+    <!-- end mobile nav -->
+
+     <div class="container-fluid">
+
+
+    </div> <!-- End of container -->
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

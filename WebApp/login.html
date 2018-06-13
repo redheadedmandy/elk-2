@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="dashboard">
+<meta name="author" content="Amanda Harvey">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/mainstyle.css">
+<link rel="stylesheet" href="css/fontello.css">
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+           
+<div class="container-fluid">
+
+    <!-- top nav -->
+    <div class="mainnav">
+      <nav class="navbar right-align">
+        <ul class="navbar-nav main-ul">
+                  <li class="nav-item pic-dropper">
+                    <a class="nav-link notification-icon" href="#" id="profileDropdown">
+                      <img class="profpic" src="images/logo.png">
+                    </a>
+                  </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- End of row/top nav -->
+
+<!-- mobile nav 768px and under -->
+  <nav class="navbar mobnav fixed-bottom mobilenav">
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/borderless-logo.png"><br><h6 class="pt-1">Home</h6>
+        </a>
+      </div>
+      <div class="col mob active">
+        <a class="nav-link unlink" href="activity.html">
+          <img class="img-fluid mob" src="images/cubes.png"><h6 class="pt-1">Loads</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="manage-users.html">
+          <img class="img-fluid mob" src="images/users.png"><h6 class="pt-1">Drivers</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/cog.png"><h6 class="pt-1">Settings</h6>
+        </a>
+      </div>
+  </nav>
+    <!-- end mobile nav -->
+
+     <div class="container-fluid">
+      <div class="pg-back float-left" style="position: relative">
+        <img class="img-fluid bottom" src="images/login-2.png"/>
+      </div>
+
+      <div class="float-right login-group">
+        <h4 class="logon-head">OnBoard</h4>
+        <h5 class="center">Welcome back! Log back in to your account.</h5>
+            <form class="login-form">
+              <input type="hidden" name="rewardspace" id="rewardspace" class="rewardspace">
+              <div class="form-group space">
+                
+                <label class="float-label" for="username">Username</label><input type="username" name="username" id="username" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label class="float-label" for="username">Password</label>
+                <input type="password" name="password" id="password" class="form-control" >
+              </div>
+              <a href="forgot-password.html" class="forgot-pass-link">Forgot password?</a>
+              <div class="form-group"> 
+                <button type="submit" class="btn btn-primary float-right">Log in</button>
+              </div>
+            </form>
+        </div>
+
+
+
+    </div> <!-- End of container -->
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

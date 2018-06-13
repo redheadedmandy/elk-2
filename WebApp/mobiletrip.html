@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="trip">
+<meta name="author" content="Amanda Harvey">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trip</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/mainstyle.css">
+<link rel="stylesheet" href="css/fontello.css">
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar" class="active">
+                <div class="sidebar-header">
+                    <a href="webstart.html"><img class="img-fluid logo-head" src="images/logo.png"></a>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="admin-dashboard-index.html">
+                            <i class="icon-asset-3"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="activity.html">
+                            <i class="icon-cubes"></i>
+                            Loads
+                        </a>
+                        <a href="manage-users.html">
+                            <i class="icon-users"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-settings-integrate.html">
+                            <i class="icon-cog"></i>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+<div class="container-fluid">
+
+    <!-- top nav -->
+    <div class="mainnav">
+      <nav class="navbar right-align">
+        <ul class="navbar-nav main-ul">
+                  <li class="nav-item dropdown dropper">
+                    <a class="nav-link notification-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-bell"></i>
+                    </a>
+                      <ul class="dropdown-menu position-relative">
+                        <li class="head bg-dark">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                              <span>Notifications (3)</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="notification-box">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="notification-box bg-gray">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="notification-box">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="drop-footer bg-dark text-center">
+                          <a href="activity.html" class="text-light">View All</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown pic-dropper">
+                    <a class="nav-link notification-icon" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="profpic" src="images/prof-4.jpg">
+                    </a>
+                      <ul class="dropdown-menu position-relative profile-menu">
+                        <li class="head text-light bg-dark">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                              <span>Jane Doe</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <ul>
+                          <li class="prof-men-link">
+                            <a href="#">Feedback</a>
+                          </li>
+                          <div class="dropdown-divider"></div>
+                          <li class="prof-men-link">
+                            Logout
+                          </li>
+                      </ul>
+                        </li>
+                      </ul>
+                  </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of row/top nav -->
+
+<!-- mobile nav 768px and under -->
+  <div class="top-gradient"></div>
+
+  <nav class="mob-top">
+    <ul class="navbar-nav mob-ul">
+                  <li class="nav-item dropdown pic-dropper">
+                    <a class="nav-link notification-icon" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="profpic" src="images/prof-4.jpg">
+                    </a>
+                      <ul class="dropdown-menu position-relative profile-menu">
+                        <li class="head text-light bg-dark">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                              <span>Jane Doe</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <ul>
+                          <li class="prof-men-link">
+                            <a href="#">Feedback</a>
+                          </li>
+                          <div class="dropdown-divider"></div>
+                          <li class="prof-men-link">
+                            Logout
+                          </li>
+                      </ul>
+                        </li>
+                      </ul>
+                  </li>
+        </ul>
+  </nav>
+
+  <nav class="navbar mobnav fixed-bottom mobilenav">
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/borderless-logo.png"><br><h6 class="pt-1 mob-text">Home</h6>
+        </a>
+      </div>
+      <div class="col mob active">
+        <a class="nav-link unlink" href="activity.html">
+          <img class="img-fluid mob" src="images/cubes.png"><h6 class="pt-1 mob-text">Loads</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="manage-users.html">
+          <img class="img-fluid mob" src="images/users.png"><h6 class="pt-1 mob-text">Drivers</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/cog.png"><h6 class="pt-1 mob-text">Settings</h6>
+        </a>
+      </div>
+  </nav>
+<!-- end mobile nav -->
+
+     <div class="container-fluid">
+
+
+     <div id="map-container"> <div id="map"></div> </div>
+
+
+
+      <div class="page-head map-head container">
+        <h3 class="page-title" id="map-title">Trip</h3>
+      </div>
+
+<!--       <div class="content-container align-bottom">
+        <div class="row">
+          <div class="col card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <span class="next float-right">
+              <h5>
+                <a href="#" class="unlink">
+                  <i class="icon-right"></i>
+                </a>
+              </h5>
+            </span>
+            <hr class="underline">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <img src="images/trail.svg" style="height: 75%;"/>
+          </div>
+          <div class="col">
+            <h6 class="light-text low-line">Pickup</h6>
+            <h5><strong>Staunton, VA</strong></h5>
+            <h6><strong>May 30, 2018</strong></h6>
+            <h6>08:00 appt</h6>
+            <br>
+            <h6 class="light-text low-line">Delivery</h6>
+            <h5><strong>Pittsburgh, PA</strong></h5>
+            <h6><strong>May 30, 2018</strong></h6>
+            <h6>08:00 appt</h6>
+          </div>
+          <div class="col mid-line">
+            <br>
+            <h6 class="light-text space"><i class="icon-building-filled iconspace"></i>Elk Logistics</h6>
+            <h6 class="light-text space"><i class="icon-cubes iconspace"></i>Toys</h6>
+            <h6 class="light-text space"><i class="icon-asset-20 iconspace"></i>30,000 lbs</h6>
+            <h6 class="light-text space"><i class="icon-money iconspace"></i>$1200 RtT</h6>
+            <h6 class="light-text space"><i class="icon-asset-14 iconspace"></i>459 miles</h6>
+          </div>
+        </div>
+      </div> -->
+
+     <!--  <div class="card text-center content-container align-bottom">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> -->
+
+<!-- 
+      <div class="content-container align-bottom">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="details" aria-selected="true">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="notes" aria-selected="false">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="docs" aria-selected="false">Docs</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
+      </div>
+ -->
+
+
+      <div class="content-container align-bottom">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active text-center" id="pills-details-tab" data-toggle="pill" href="#pills-details" role="tab" aria-controls="pills-details" aria-selected="true">Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-notes-tab" data-toggle="pill" href="#pills-notes" role="tab" aria-controls="pills-notes" aria-selected="false">Notes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-docs-tab" data-toggle="pill" href="#pills-docs" role="tab" aria-controls="pills-docs" aria-selected="false">Docs</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
+          <div class="row">
+            <div class="col-1">
+              <img class="trail" src="images/trail.svg"/>
+            </div>
+            <div class="col">
+              <h6 class="light-text low-line">Pickup</h6>
+              <h5 class="smaller"><strong>Staunton, VA</strong></h5>
+              <h6><strong>May 30, 2018</strong></h6>
+              <h6>08:00 appt</h6>
+              <br>
+              <h6 class="light-text low-line">Delivery</h6>
+              <h5 class="smaller"><strong>Pittsburgh, PA</strong></h5>
+              <h6><strong>May 30, 2018</strong></h6>
+              <h6>08:00 appt</h6>
+            </div>
+            <div class="col mid-line">
+              <br>
+              <h6 class="light-text space"><i class="icon-building-filled iconspace"></i>Elk Logistics</h6>
+              <h6 class="light-text space"><i class="icon-cubes iconspace"></i>Toys</h6>
+              <h6 class="light-text space"><i class="icon-asset-20 iconspace"></i>30,000 lbs</h6>
+              <h6 class="light-text space"><i class="icon-money iconspace"></i>$1200 RtT</h6>
+              <h6 class="light-text space"><i class="icon-asset-14 iconspace"></i>459 miles</h6>
+              <h6 class="light-text space"><i class="icon-clock iconspace"></i>4 h 59 min</h6>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="row">
+            <div class="col">
+              <h6 class="light-text low-line">Broker</h6>
+              <h5 class="smaller"><strong>Buddy Holly</strong></h5>
+              <h6><strong>111-111-1111</strong></h6>
+              <br>
+              <h6 class="light-text low-line">Other</h6>
+              <h5><strong>Sam Jones</strong></h5>
+              <h6><strong>222-222-2222</strong></h6>
+            </div>
+            <div class="col mid-line">
+              <h6 class="light-text low-line">Dispatcher</h6>
+              <h5 class="smaller"><strong>Melissa</strong></h5>
+              <h6><strong>333-333-3333 ext 123</strong></h6>
+              <br>
+              <h6 class="light-text low-line">Dispatch</h6>
+              <h5 class="smaller"><strong>Main Line</strong></h5>
+              <h6><strong>444-444-4444</strong></h6>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-notes" role="tabpanel" aria-labelledby="pills-notes-tab">
+          Do not park in main lot— behind the second building there is a large gravel lot where you can stay overnight if necessary.
+        </div>
+        <div class="tab-pane fade" id="pills-docs" role="tabpanel" aria-labelledby="pills-docs-tab">
+          <label>Upload docs</label><input type="file" accept="image/*" capture="camera">
+        </div>
+      </div>
+    </div>
+
+     <div class="bottom-gradient"></div>
+    </div> <!-- End of container -->
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 38.147661, lng: -79.073382},
+          zoom: 8,
+          disableDefaultUI: true,
+          styles: [
+                  {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#f6f6f4"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "landscape.natural.landcover",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#c8e5cd"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "landscape.natural.terrain",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#c8e5cd"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.business",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "labels",
+                    "stylers": [
+                      {
+                        "color": "#c8e5cd"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.sports_complex",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#c8e5cd"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#ffffff"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                      {
+                        "color": "#e4e4e4"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.local",
+                    "elementType": "labels",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#bde1f1"
+                      }
+                    ]
+                  }
+                ]
+        });
+      }
+    </script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi8x103gYGavEtDLI_MjBq7jj4-q9i5e4&callback=initMap"
+    async defer></script>
+
+</body>
+
+</html>

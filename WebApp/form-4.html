@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="dashboard">
+<meta name="author" content="Amanda Harvey">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/transition.min.css">
+<link rel="stylesheet" href="css/dropdown.min.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="css/mainstyle.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar" class="active">
+                <div class="sidebar-header">
+                    <a href="webstart.html"><img class="img-fluid logo-head" src="images/logo.png"></a>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="admin-dashboard-index.html">
+                            <i class="icon-asset-3"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="activity.html">
+                            <i class="icon-plus"></i>
+                            Add
+                        </a>
+                    </li>
+                    <li>
+                        <a href="activity.html">
+                            <i class="icon-cubes"></i>
+                            Loads
+                        </a>
+                        <a href="manage-users.html">
+                            <i class="icon-users"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-settings-integrate.html">
+                            <i class="icon-cog"></i>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+<div class="container-fluid">
+    <!-- top nav -->
+    <div class="mainnav">
+      <nav class="navbar right-align">
+        <ul class="navbar-nav main-ul">
+                  <li class="nav-item dropdown dropper">
+                    <a class="nav-link notification-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-bell"></i>
+                    </a>
+                      <ul class="dropdown-menu position-relative">
+                        <li class="head bg-dark">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                              <span>Notifications (3)</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="notification-box">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="notification-box bg-gray">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="notification-box">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-3 text-center">
+                              <img src="images/prof-4.jpg" class="w-50 rounded-circle">
+                            </div>    
+                            <div class="col-lg-8 col-sm-8 col-8">
+                              <strong class="text-info">David John</strong>
+                              <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                              </div>
+                              <small class="text-warning">27.11.2015, 15:00</small>
+                            </div>    
+                          </div>
+                        </li>
+                        <li class="drop-footer bg-dark text-center">
+                          <a href="activity.html" class="text-light">View All</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown pic-dropper">
+                    <a class="nav-link notification-icon" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="profpic" src="images/prof-4.jpg">
+                    </a>
+                      <ul class="dropdown-menu position-relative profile-menu">
+                        <li class="head text-light bg-dark">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                              <span>Jane Doe</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <ul>
+                          <li class="prof-men-link">
+                            <a href="#">Feedback</a>
+                          </li>
+                          <div class="dropdown-divider"></div>
+                          <li class="prof-men-link">
+                            Logout
+                          </li>
+                      </ul>
+                        </li>
+                      </ul>
+                  </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- End of row/top nav -->
+
+<!-- mobile nav 768px and under -->
+  <nav class="navbar mobnav fixed-bottom mobilenav">
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/borderless-logo.png"><br><h6 class="pt-1">Home</h6>
+        </a>
+      </div>
+      <div class="col mob active">
+        <a class="nav-link unlink" href="activity.html">
+          <img class="img-fluid mob" src="images/cubes.png"><h6 class="pt-1">Loads</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="manage-users.html">
+          <img class="img-fluid mob" src="images/users.png"><h6 class="pt-1">Drivers</h6>
+        </a>
+      </div>
+      <div class="col mob">
+        <a class="nav-link unlink" href="#">
+          <img class="img-fluid mob" src="images/cog.png"><h6 class="pt-1">Settings</h6>
+        </a>
+      </div>
+  </nav>
+<!-- end mobile nav -->
+
+<!-- Begin main content container -->
+      <div class="container-fluid">
+        <div class="content-container container-slim">
+
+          <nav class="form-steps">
+            <div class="form-steps__item form-steps__item--completed">
+              <div class="form-steps__item-content">
+                <span class="form-steps__item-icon">1</span>
+                <span class="form-steps__item-text">Stops</span>
+              </div>
+
+            </div>
+            <div class="form-steps__item form-steps__item--completed">
+              <div class="form-steps__item-content">
+                <span class="form-steps__item-icon">2</span>
+                <span class="form-steps__item-line"></span>
+                <span class="form-steps__item-text">Contact</span>
+              </div>
+            </div>
+            <div class="form-steps__item form-steps__item--active">
+              <div class="form-steps__item-content">
+                <span class="form-steps__item-icon">3</span>
+                <span class="form-steps__item-line"></span>
+                <span class="form-steps__item-text">Load Details</span>
+              </div>
+            </div>
+            <div class="form-steps__item">
+              <div class="form-steps__item-content">
+                <span class="form-steps__item-icon">4</span>
+                <span class="form-steps__item-line"></span>
+                <span class="form-steps__item-text">Review</span>
+              </div>
+            </div>
+          </nav>
+
+          <form name="userMainSettings" id="userMainSettings" class="userMainSettings">
+
+            <h4 class="form-subhead top"><a href="#"><i class="icon-pencil"></i></a>Pickup</h4>
+            <div class="form-group row"><label>Location:</label>
+                <input class="form-control" type="text" name="rewardeeName" disabled>
+            </div>
+            <div class="form-group row">
+              <label for="userAboutMe">Location notes:</label>
+              <textarea class="form-control" id="userAboutMe" rows="3" placeholder="Is there any information about the location that the driver should know?" disabled></textarea>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="defaultCheck1" checked disabled>
+                <label class="form-check-label" for="defaultCheck1">
+                  Save location notes for this place?
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="flatpickr-1">Date:</label>
+              <input class="form-control" id="flatpickr-1" disabled/>
+            </div>
+            <div class="row">
+              <div class="form-group col left">
+                <label for="flatpickr-2">Time:</label>
+                <input class="form-control" id="flatpickr-2" disabled/>
+              </div>
+              <div class="form-group col right">
+                <label for="flatpickr-2">Time:</label>
+                <input class="form-control" id="flatpickr-2" disabled/>
+              </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" disabled>
+                <label class="form-check-label" for="defaultCheck1">
+                  Appointment?
+                </label>
+            </div>
+
+            <h4 class="form-subhead">Delivery</h4>
+            <div class="form-group row"><label>Location:</label>
+                <input type="text" class="form-control" name="rewardeeName" disabled>
+            </div>
+            <div class="form-group row">
+              <label for="userAboutMe">Location notes:</label>
+              <textarea class="form-control" id="userAboutMe" rows="3" placeholder="Is there any information about the location that the driver should know?"></textarea>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Save location notes for this place?
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="flatpickr-1">Date:</label>
+              <input class="form-control" id="flatpickr-1"/>
+            </div>
+            <div class="row">
+              <div class="form-group col left">
+                <label for="flatpickr-2">Time:</label>
+                <input class="form-control" id="flatpickr-2"/>
+              </div>
+              <div class="form-group col right">
+                <label for="flatpickr-2">Time:</label>
+                <input class="form-control" id="flatpickr-2"/>
+              </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Appointment?
+                </label>
+            </div>
+
+            <h4 class="form-subhead">Broker Contact</h4>
+            <div class="form-group row"><label>Company:</label>
+              <div class="ui fluid search selection dropdown" id="company" data-toggle="popover" data-content="Unknown company. Add new?" data-trigger="hover">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a name</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-building-filled iconspace"></i>Choose a company</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+            <div class="form-group row">
+                <span class="redtext">Uh oh! Looks like we don't have that company on file!</span> <a href="#"> Add new?</a>
+            </div>
+            <div class="form-group row">
+              <label for="newCompany">Company Name</label>
+              <input class="form-control" type="text"/>
+            </div>
+            <div class="form-group row">
+                <label>Location:</label>
+                <input type="text" class="form-control" name="newAddress">
+            </div>
+            <div class="form-group row">
+                <label>Main Phone Line:</label>
+                <input type="tel" class="form-control" name="newCompanyPhone">
+            </div>
+            <div class="form-group row">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Save this company for future use?
+                </label>
+              </div>
+            </div>
+            <div class="form-group row"><label>Contact Name:</label>
+              <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a name</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-asset-5 iconspace"></i>Choose a place</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="userAboutMe">Contact Phone:</label>
+              <input class="form-control" type="tel"/>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Save broker to company?
+                </label>
+              </div>
+            </div>
+
+            <h4 class="form-subhead">Other Contact (Optional)</h4>
+            <div class="form-group row"><label>Company:</label>
+              <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a name</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-asset-5 iconspace"></i>Choose a place</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+            <div class="form-group row"><label>Type:</label>
+              <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a name</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-asset-5 iconspace"></i>Choose a place</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+            <div class="form-group row"><label>Contact Name:</label>
+              <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a name</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-asset-5 iconspace"></i>Choose a place</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="userAboutMe">Contact Phone:</label>
+              <input class="form-control" type="tel"/>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Save broker to company?
+                </label>
+              </div>
+            </div>
+
+            <h4 class="form-subhead">Dispatch</h4>
+            <div class="form-group row"><label>Choose a main contact:</label>
+              <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a name</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-asset-5 iconspace"></i>Choose a place</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+
+             <h4 class="form-subhead">Load Details</h4>
+            <div class="form-group row"><label>Commodity</label>
+              <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a commodity type</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-cubes iconspace"></i>Choose a commodity</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-group row"><label>Rate to Truck</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input class="form-control" type="number"/>
+              </div>
+            </div>
+
+            <div class="form-group row"><label>Weight</label>
+              <div class="input-group mb-2">
+                <input class="form-control" type="number"/>
+                <div class="input-group-append">
+                  <div class="input-group-text">lbs</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row"><label>Assign a driver</label>
+              <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="rewardeeName"><i class="dropdown icon"></i>
+                <div class="default text"><i class="icon-search iconspace"></i>Start typing a name</div>
+                  <div class="menu">
+                    <div class="item" data-value="null"><i class="icon-user iconspace"></i>Choose a river</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                    <div class="item" data-value="af">Amy Learer</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="userAboutMe">Load notes:</label>
+              <textarea class="form-control" id="userAboutMe" rows="3" placeholder="Is there any information about the location that the driver should know?"></textarea>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Save load and notes for future use?
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-space float-right">Next</button>
+              <button type="submit" class="btn btn-secondary btn-space float-right">Cancel</button>
+            </div>
+          </form>
+          
+        </div>
+      </div> 
+<!-- End of main content container -->
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/transition.min.js"></script>
+<script src="js/dropdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+<script>
+  $('.search.selection')
+  .dropdown();
+</script>
+</body>
+
+</html>
