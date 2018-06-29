@@ -2,18 +2,27 @@
 <html lang="en" >
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="trip">
+<meta name="description" content="go">
 <meta name="author" content="Amanda Harvey">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trip</title>
+<title>Go</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/mainstyle.css">
 <link rel="stylesheet" href="css/fontello.css">
 <style>
-  #map {
-    filter: blur(8px);
+  #map-container {
+    z-index: 1;
   }
+
+  .map-head {
+    z-index: 2;
+  }
+
+  .top-gradient {
+    z-index: 2;
+  }
+
 </style>
 
 </head>
@@ -211,7 +220,7 @@
      <div class="container-fluid">
 
 
-     <div id="map-container"> <div id="map"></div> </div>
+     <div id="map-container"><div id="map"></div></div>
 
 
 
@@ -219,83 +228,8 @@
         <h3 class="page-title" id="map-title">Trip</h3>
       </div>
 
-<!-- 
-      <div class="content-container align-bottom">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active text-center" id="pills-details-tab" data-toggle="pill" href="#pills-details" role="tab" aria-controls="pills-details" aria-selected="true">Details</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-notes-tab" data-toggle="pill" href="#pills-notes" role="tab" aria-controls="pills-notes" aria-selected="false">Notes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-docs-tab" data-toggle="pill" href="#pills-docs" role="tab" aria-controls="pills-docs" aria-selected="false">Docs</a>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
-          <div class="row">
-            <div class="col-1">
-              <img class="trail" src="images/trail.svg"/>
-            </div>
-            <div class="col">
-              <h6 class="light-text low-line">Pickup</h6>
-              <h5 class="smaller"><strong>Staunton, VA</strong></h5>
-              <h6><strong>May 30, 2018</strong></h6>
-              <h6>08:00 appt</h6>
-              <br>
-              <h6 class="light-text low-line">Delivery</h6>
-              <h5 class="smaller"><strong>Pittsburgh, PA</strong></h5>
-              <h6><strong>May 30, 2018</strong></h6>
-              <h6>08:00 appt</h6>
-            </div>
-            <div class="col mid-line">
-              <br>
-              <h6 class="light-text space"><i class="icon-building-filled iconspace"></i>Elk Logistics</h6>
-              <h6 class="light-text space"><i class="icon-cubes iconspace"></i>Toys</h6>
-              <h6 class="light-text space"><i class="icon-asset-20 iconspace"></i>30,000 lbs</h6>
-              <h6 class="light-text space"><i class="icon-money iconspace"></i>$1200 RtT</h6>
-              <h6 class="light-text space"><i class="icon-asset-14 iconspace"></i>459 miles</h6>
-              <h6 class="light-text space"><i class="icon-clock iconspace"></i>4 h 59 min</h6>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-          <div class="row">
-            <div class="col">
-              <h6 class="light-text low-line">Broker</h6>
-              <h5 class="smaller"><strong>Buddy Holly</strong></h5>
-              <h6><strong>111-111-1111</strong></h6>
-              <br>
-              <h6 class="light-text low-line">Other</h6>
-              <h5><strong>Sam Jones</strong></h5>
-              <h6><strong>222-222-2222</strong></h6>
-            </div>
-            <div class="col mid-line">
-              <h6 class="light-text low-line">Dispatcher</h6>
-              <h5 class="smaller"><strong>Melissa</strong></h5>
-              <h6><strong>333-333-3333 ext 123</strong></h6>
-              <br>
-              <h6 class="light-text low-line">Dispatch</h6>
-              <h5 class="smaller"><strong>Main Line</strong></h5>
-              <h6><strong>444-444-4444</strong></h6>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="pills-notes" role="tabpanel" aria-labelledby="pills-notes-tab">
-          Do not park in main lot— behind the second building there is a large gravel lot where you can stay overnight if necessary.
-        </div>
-        <div class="tab-pane fade" id="pills-docs" role="tabpanel" aria-labelledby="pills-docs-tab">
-          <label>Upload docs</label><input type="file" accept="image/*" capture="camera">
-        </div>
-      </div>
-    </div> -->
 
-
-        <div id="main-content">
+      <div id="main-content">
           <nav class="form-steps">
             <div class="form-steps__item form-steps__item--completed">
               <div class="form-steps__item-content">
@@ -354,8 +288,10 @@
               </div>
             </div>
           </div>
-        <div class="content-container confirm">
-          <h3><i class="icon-ok iconspace"></i>Loaded</h3>
+
+        <div class="confirm">
+          <h3 id="step1"><i class="icon-ok iconspace"></i>Loaded</h3>
+          <div class="half hidden"><h1 class="inline" id="emergency"><i class="icon-asset-7"></i></h1></div><div class="half hidden"><h1 class="inline" id="delay"><i class="icon-asset-8"></i></h1></div>
         </div>
 
         <div class="row">
@@ -372,7 +308,11 @@
         </div>
       </div>
 
-        
+
+
+
+
+
 
      <div class="bottom-gradient"></div>
     </div> <!-- End of container -->
@@ -384,14 +324,17 @@
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="js/anime.min.js"></script>
+<!-- <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 38.147661, lng: -79.073382},
           zoom: 8,
           disableDefaultUI: true,
+          gestureHandling: 'greedy',
           styles: [
                   {
                     "featureType": "administrative.land_parcel",
@@ -503,10 +446,10 @@
                 ]
         });
       }
-    </script>
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi8x103gYGavEtDLI_MjBq7jj4-q9i5e4&callback=initMap"
-    async defer></script>
-
+    </script> -->
+<!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi8x103gYGavEtDLI_MjBq7jj4-q9i5e4&callback=initMap"
+    async defer></script> -->
+<script src="js/index.js"></script>
 
 </body>
 

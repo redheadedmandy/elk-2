@@ -1,59 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="dashboard">
-<meta name="author" content="Amanda Harvey">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="css/mainstyle.css">
-<link rel="stylesheet" href="css/fontello.css">
-
-
-</head>
-
-<body>
-
-<div class="wrapper">
-            <!-- Sidebar Holder -->
-            <nav id="sidebar" class="active">
-                <div class="sidebar-header">
-                    <a href="webstart.html"><img class="img-fluid logo-head" src="images/logo.png"></a>
-                </div>
-
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="admin-dashboard-index.html">
-                            <i class="icon-asset-3"></i>
-                            Dashboard
-                        </a>
-                    </li>
-                    <li>
-                        <a href="activity.html">
-                            <i class="icon-cubes"></i>
-                            Loads
-                        </a>
-                        <a href="manage-users.html">
-                            <i class="icon-users"></i>
-                            Drivers
-                        </a>
-                    </li>
-                    <li>
-                        <a href="admin-settings-integrate.html">
-                            <i class="icon-cog"></i>
-                            Settings
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-
-
-
-<div class="container-fluid">
-
+<template>
+  <div class="hello">
     <!-- top nav -->
     <div class="mainnav">
       <nav class="navbar right-align">
@@ -142,50 +88,104 @@
                         </li>
                       </ul>
                   </li>
-        </ul> 
+        </ul>
       </nav>
     </div>
     
     <!-- End of row/top nav -->
-
-<!-- mobile nav 768px and under -->
-  <nav class="navbar mobnav fixed-bottom mobilenav">
-      <div class="col mob">
-        <a class="nav-link unlink" href="#">
-          <img class="img-fluid mob" src="images/borderless-logo.png"><br><h6 class="pt-1">Home</h6>
-        </a>
-      </div>
-      <div class="col mob active">
-        <a class="nav-link unlink" href="activity.html">
-          <img class="img-fluid mob" src="images/cubes.png"><h6 class="pt-1">Loads</h6>
-        </a>
-      </div>
-      <div class="col mob">
-        <a class="nav-link unlink" href="manage-users.html">
-          <img class="img-fluid mob" src="images/users.png"><h6 class="pt-1">Drivers</h6>
-        </a>
-      </div>
-      <div class="col mob">
-        <a class="nav-link unlink" href="#">
-          <img class="img-fluid mob" src="images/cog.png"><h6 class="pt-1">Settings</h6>
-        </a>
-      </div>
-  </nav>
-    <!-- end mobile nav -->
-
-     <div class="container-fluid">
-
-
-    </div> <!-- End of container -->
   </div>
-</div>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-</body>
+</template>
 
-</html>
+<script>
+export default {
+  name: 'Sidebar'
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.wrapper {
+        display: flex;
+        align-items: stretch;
+    }
+
+    #sidebar {
+      background: #FDFDFD;
+      color: #222941;
+      transition: all 0.3s;
+      height: 100vh;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0; /* required */
+      box-shadow: 3px 0px 17px rgba(32, 30, 103, 0.03);
+    }
+
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+    }
+
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        text-align: left;
+    }
+
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+    #sidebar.active ul li a i {
+        margin-right:  0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar .sidebar-header {
+        padding-left: 20px;
+        padding-bottom: 0px;
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+
+    #sidebar ul.components {
+        padding: 20px 0;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+        color: #222941;
+    }
+
+    #sidebar ul li a:hover {
+        color: #222941;
+        background: #EFF7FD;
+    }
+
+    #sidebar ul li a i {
+        margin-right: 10px;
+    }
+
+    #sidebar ul li.active {
+        color: #222941;
+        background: #EFF7FD;
+        border-left: 5px solid #5BB0FF;
+    }
+
+    .sidebar-header {
+      padding-top: 0px;
+    }
+</style>
